@@ -1,0 +1,79 @@
+.body {
+    background-color: lightcoral;
+    color: navy;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav{
+    display:flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.nav li{
+    margin: 0 15px;
+}
+
+.name{
+    text-align: center;
+    margin: 40px;
+    border: 5px dashed white;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+
+.text{
+    text-align: center;
+    margin: 40px;
+    font-size: 45px;
+
+}
+
+.header{
+    margin: 40px;
+    font-family: Calibri; 
+    font-weight: bold;
+    color: maroon;
+    font-size: 20px;
+    text-align: center;
+}
+
+.list ul{
+    list-style-type: none;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-item{
+    border: 3px solid white;
+    padding: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.description{
+    text-align: center;
+    border: 7px solid navy;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: navy;
+}
+
+a:hover {
+    background-color: maroon;
+    color: white;
+}
