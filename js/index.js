@@ -26,7 +26,7 @@ messageForm.addEventListener('submit', (event) =>{
     const usersEmail = event.target.usersEmail.value;
     const usersMessage = event.target.usersMessage.value;
     console.log(usersName, usersEmail, usersMessage);
-    const messageSection = document.querySelector('#Messages');
+    const messageSection = document.querySelector('#messages');
     const messageList = messageSection.querySelector('ul');
     const newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span> wrote: ${usersMessage}</span>`;
