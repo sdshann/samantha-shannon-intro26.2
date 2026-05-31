@@ -70,3 +70,25 @@ a:hover {
     background-color: maroon;
     color: white;
 }
+
+form label{
+    padding: 20px;
+}
+
+form input{
+    padding: 10px;
+    margin: 20px;
+}
+
+form button{
+    margin: 20px;
+}
+
+#messages li{
+    padding: 10px;
+    margin: 10px;
+}
+
+#messages li button{
+    margin-left: 20px;
+}
