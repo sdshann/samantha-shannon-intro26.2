@@ -12,7 +12,7 @@ const skills = ["JavaScript", "HTML", "CSS"];
 const skillsSection = document.querySelector('#Skills');
 const skillsList = skillsSection.querySelector('ul');
 
-for (let i = 0; i < skills.length; i++) {
+for (let i = 0; i < skills.length; i++) { //creating a list item for each skill in the array and adding it to the Skills section. 
     const skill = document.createElement('li');
     skill.className = 'list-item';
     skill.innerHTML = skills[i];
@@ -41,4 +41,25 @@ messageForm.addEventListener('submit', (event) =>{
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+
+fetch("https://api.github.com/users/sdshann/repos") //accessing the GitHub API for my repositories
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        const repositories = response;
+        console.log(repositories);
+
+        const projectSection = document.querySelector('#Projects');
+        const projectList = projectSection.querySelector('ul');
+        for(let i = 0; i < repositories.length; i++) {
+            const project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => console.error('Error fetching repositories:', error));
+
+
+
 
