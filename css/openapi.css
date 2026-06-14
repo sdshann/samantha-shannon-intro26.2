@@ -32,7 +32,7 @@ body {
     gap: 50px;
 }
 
-#kusamaImages img, #georgiaImages img {
+#kusamaImages img, #georgiaImages img { /*changes the size of the images to fit the page*/
     max-width: 100%;
     width: 400px;
     height: 600px;

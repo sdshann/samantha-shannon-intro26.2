@@ -28,7 +28,7 @@ function loadGeorgiaImages() {
             const container = document.getElementById("georgiaImages");
             container.innerHTML = "";
 
-            data.data.forEach(artwork => {
+            data.data.forEach(artwork => { //adds image associated with the API data to the page
                 const imgElement = document.createElement("img");
                 imgElement.src = `${imageBaseUrl}/${artwork.image_id}/full/843,/0/default.jpg`;
                 imgElement.alt = artwork.title;
@@ -38,4 +38,4 @@ function loadGeorgiaImages() {
         .catch(error => console.error('Error fetching artwork:', error));
 }
 
-document.getElementById("georgiaButton").addEventListener("click", loadGeorgiaImages);
+document.getElementById("georgiaButton").addEventListener("click", loadGeorgiaImages); // executes the function to show the image when the button is clicked. 
